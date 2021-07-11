@@ -1,4 +1,4 @@
-from asyncio import Queue
+from asyncio import Queue as _Queue
 from asyncio import QueueEmpty as Empty
 from typing import Dict 
 from typing import Union
@@ -33,6 +33,15 @@ def task_done(chat_id: int):
             queues[chat_id].task_done()
         except ValueError:
             pass
+
+
+def clear(chat_id: int):
+    if chat_id in queues:
+        if queues[chat_id].empty():
+            raise Empty
+        else:
+            queues[chat_id].queue = []
+    raise Empty
 
 
 def clear(chat_id: int):
