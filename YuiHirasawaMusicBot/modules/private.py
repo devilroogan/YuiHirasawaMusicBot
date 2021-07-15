@@ -13,7 +13,7 @@ from YuiHirasawaMusicBot.config import UPDATES_CHANNEL
 from YuiHirasawaMusicBot.config import BOT_USERNAME
 logging.basicConfig(level=logging.INFO)
 
-@Client.on_message(filters.private & filters.incoming & filters.command(['start']))
+Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     await AddUserToDatabase(bot, m)
     FSub = await ForceSub(bot, m)
