@@ -105,7 +105,8 @@ If you donlt like to play in linked channel:
 - `.da` - disapproove someone to pm you
 + Sudo Users can execute any command in any groups
 
-### Credits
+### Credits h
+
 Don't edit this part
 
 #### Special Credits
@@ -124,7 +125,7 @@ YuiHirasawaMusicBot is a modified version of [Callsmusic](https://github.com/cal
 - [QueenArzoo](https://github.com/QueenArzoo): Dev
 - [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev
 - [Hamker Cat](https://github.com/thehamkercat/)
-- [Anjana-Ma](https://github.com/Anjana-Ma): 
+- [Anjana-Ma](https://github.com/Anh.jana-Ma): 
 - [ImJanindu](https://github.com/ImJanindu): 
 - [MARSHALX](https://github.com/MarshalX): TgCalls
 - [Original Repo owners](https://github.com/CallsMusic/CallsMusic)
