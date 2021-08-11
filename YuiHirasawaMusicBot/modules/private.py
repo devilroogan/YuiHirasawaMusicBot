@@ -14,8 +14,11 @@ from YuiHirasawaMusicBot.config import BOT_USERNAME
 logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
-def _start(client, message):
-    client.send_message(message.chat.id,
+async def _start(client, message):
+    await client.send_sticker(message.chat.id,
+        sticker="CAACAgQAAxkDAAEBodFhE8O-fwL_pG8gicOA_qvwrn9FcQACDwkAAkcmuVHk6q8z3OUzHx4E"
+        )
+    await client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
@@ -54,8 +57,8 @@ async def gstart(_, message: Message):
 
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['help']))
-def _help(client, message):
-    client.send_message(chat_id = message.chat.id,
+async def _help(client, message):
+    await client.send_message(chat_id = message.chat.id,
         text = tr.HELP_MSG[1],
         parse_mode="markdown",
         disable_web_page_preview=True,
