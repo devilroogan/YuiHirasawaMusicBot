@@ -6,12 +6,12 @@ from YuiHirasawaMusicBot.config import DURATION_LIMIT
 from YuiHirasawaMusicBot.helpers.errors import DurationLimitError
 
 ydl_opts = {
-    "format": "bestaudio",
-    "addmetadata": True,
+    "format": "bestaudio/best",
+    "verbose": True,
     "geo-bypass": True,
     "nocheckcertificate": True,
     "outtmpl": "downloads/%(id)s.%(ext)s",
-    "forceip": 4,
+    
 }
 ydl = YoutubeDL(ydl_opts)
 
