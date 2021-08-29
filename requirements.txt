@@ -1,6 +1,6 @@
-pyrogram 
-pytgcalls==3.0.0.dev4
-TgCrypto
+pyrogram
+tgcrypto
+pytgcalls[pyrogram]
 python-dotenv
 youtube_dl
 youtube_search_python
@@ -10,8 +10,8 @@ aiofiles
 asyncio
 youtube_search
 search_engine_parser
-ffmpeg
-Pillow
+ffmpeg-python
+pillow
 python-arq
 future
 psutil
