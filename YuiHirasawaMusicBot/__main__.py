@@ -21,4 +21,5 @@ bot = Bot(
 )
 
 bot.start()
-run()
+app.start()
+idle()
