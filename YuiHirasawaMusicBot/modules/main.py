@@ -1,6 +1,7 @@
 from pyrogram import Client, idle
-from config import API_ID, API_HASH, BOT_TOKEN
-from bot.videoplayer import app
+from YuiHirasawaMusicBot.config import API_ID, API_HASH, BOT_TOKEN
+from 
+YuiHirasawaMusicBot.videoplayer import app
 
 bot = Client(
     ":memory:",
